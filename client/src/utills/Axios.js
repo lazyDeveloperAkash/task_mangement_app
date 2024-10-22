@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export const Axios = axios.create({
-    baseURL: 'http://localhost:5000/api', // Set your API base URL here
+    baseURL: 'https://task-mangement-4nhh43v6x-akashs-projects-f9f05adc.vercel.app/api', // Set your API base URL here
     withCredentials: true
 });
