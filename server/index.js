@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 const cors = require('cors');
 app.use(cors({
     credentials: true,
-    origin: true
+    origin: 'https://task-mangement-app--seven.vercel.app'
 }))
 
 //cookie paeser
