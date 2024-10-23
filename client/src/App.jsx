@@ -25,7 +25,7 @@ const App = () => {
         pauseOnHover
       />
       <Router>
-        {location.pathname === "/" ? "" : <Navbar />}
+        {location.pathname !== "/" && <Navbar />}
         <Routes>
           <Route path="/" element={<RedirectIfLoggedIn><LoginOrSignup /></RedirectIfLoggedIn>} />
 
