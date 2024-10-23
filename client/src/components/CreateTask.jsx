@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useAuth } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
+import Loader from './Loader';
 
 const CreateTask = () => {
     const { loading, CreateTask } = useAuth();
@@ -84,6 +85,7 @@ const CreateTask = () => {
                     {loading ? 'Creating Task...' : 'Create Task'}
                 </button>
             </form>
+            {loading && <Loader/>}
         </div>
     )
 }

@@ -34,7 +34,7 @@ const LoginOrSignup = () => {
 
         {/* userName Input */}
         <div className="mb-4 relative">
-          <label htmlFor="password" className={`bg-white px-2 absolute left-3 transition-all duration-200 ${isFocused.userName || userData.userName ? 'text-blue-500 -top-3' : 'text-gray-700 top-2'}`}>
+          <label htmlFor="password" className={`bg-white px-2 absolute left-3 transition-all duration-200 ${isFocused.userName || userData.userName ? 'text-[#3998c0] -top-3' : 'text-gray-700 top-2'}`}>
             User Name
           </label>
           <input
@@ -45,14 +45,14 @@ const LoginOrSignup = () => {
             onFocus={() => setIsFocused({ ...isFocused, userName: true })}
             onBlur={() => setIsFocused({ ...isFocused, userName: userData.userName.length > 0 })}
             required
-            className={`block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 ${isFocused.userName || userData.userName ? 'border-blue-500' : 'border-gray-300'}`}
+            className={`block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#3998c0] focus:border-[#3998c0] transition-all duration-200 ${isFocused.userName || userData.userName ? 'border-blue-500' : 'border-gray-300'}`}
             placeholder=" "
           />
         </div>
 
         {/* Password Input */}
         <div className="mb-4 relative">
-          <label htmlFor="password" className={`bg-white px-2 absolute left-3 transition-all duration-200 ${isFocused.password || userData.password ? 'text-blue-500 -top-3' : 'text-gray-700 top-2'}`}>
+          <label htmlFor="password" className={`bg-white px-2 absolute left-3 transition-all duration-200 ${isFocused.password || userData.password ? 'text-[#3998c0] -top-3' : 'text-gray-700 top-2'}`}>
             Password
           </label>
           <input
@@ -63,7 +63,7 @@ const LoginOrSignup = () => {
             onFocus={() => setIsFocused({ ...isFocused, password: true })}
             onBlur={() => setIsFocused({ ...isFocused, password: userData.password.length > 0 })}
             required
-            className={`block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 ${isFocused.password || userData.password ? 'border-blue-500' : 'border-gray-300'}`}
+            className={`block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#3998c0] focus:border-[#3998c0] transition-all duration-200 ${isFocused.password || userData.password ? 'border-[#3998c0]' : 'border-gray-300'}`}
             placeholder=" "
           />
         </div>
@@ -71,7 +71,7 @@ const LoginOrSignup = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+          className="w-full bg-[#3998c0] text-white py-2 rounded-md hover:bg-[#3998c0] transition duration-200"
         >
           {isSignup ? "Sign up" : "Login"}
         </button>
@@ -80,7 +80,7 @@ const LoginOrSignup = () => {
         <div className="mt-4">
           <p className="text-center text-sm text-gray-600">
             Don't have an account?{' '}
-            <button onClick={() => setIsSignup(!isSignup)} className="text-blue-500 hover:underline">
+            <button onClick={() => setIsSignup(!isSignup)} className="text-[#3998c0] hover:underline">
               {isSignup ? "Login" : "Sign up"}
             </button>
           </p>
